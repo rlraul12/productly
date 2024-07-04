@@ -2,10 +2,13 @@
 
 {% block content %}
 
-<form novalidate action="{% url 'productos:formulario' %}" method='post'>
-{% csrf_token %}
-{{form}}
-<input type="submit" value="Enviar"/>
+<form 
+    novalidate 
+    action="{% url 'productos:formulario' %}" 
+    method='post'>
+    {% csrf_token %}
+    {{form}}
+    <input type="submit" value="Enviar"/>
 </form>
 
 
